@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>
+        За Нас
+    </title>
+</head>
+<div class="slider-container">
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="1.jpg">
+            </div>
+            <div class="slide">
+                <img src="2.jpg">
+            </div>
+            <div class="slide">
+                <img src="3.jpg">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <ul class="menu">
+        <li><a href="http://127.0.0.1:5500/Home.html#home">Начало</a></li>
+        <li><a href="#contact">Отностно</a></li>
+        <li><a  class="active" href="http://127.0.0.1:5500/About.html">За Нас</a></li>
+    </ul>
+
+    <h1>За Нас</h1>
+
+    <h2>Добре дошли в страницата "За Нас", тук е описано подробно ,как и защо е направен сайта, от кого се разработва, защо се е направил
+        и ако има някакви въпроси да се пишат по имейла по доло в страницата. </h2>
+
+
+        <style>
+            .image-container {
+              display: flex;
+              align-items: center;
+            }
+        
+            .image-container img {
+              max-width: 50%;
+              height: auto;
+              margin-right: 20px; /* Добавяне на разстояние между снимката и текста */
+            }
+        
+            .text-next-to-image {
+              font-size: 24px;
+              font-weight: bold;
+            }
+          </style>
+        </head>
+        <body>
+        
+        <div class="image-container">
+          <img src="Profil.jpg" width="300 px" height="600px" alt="Вашата снимка">
+          <div class="text-next-to-image">Здраввй те, тук ще опиша исторята отностно сайта и разработката му, но първо.
+            Казвам се Мартин, и съм обучаващ се програмист на езикът C#, но имам наклоности да изучавам и JavaScript, като сайтът
+            е направен  с цел обучение върху JavaScript и неговите под езици, като HTML and CSS. Сайтът е по идея на мой приятел, който не разбира кодиране
+            и леко си я присвоих, като ногава снимка има на слайдъра в началото на страницата(човекът с каската). Това е бета или даже алфа версия на 
+            сайта, и ако ми се занимава в бъдеще с него има вероятност да бъде подобрен. БЛАГОДАРЯ!!!
+          </div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+    }, 5000);
+</script>
+</body>
+</html>

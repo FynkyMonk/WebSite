@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>Balkanche.com</title>
+</head>
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+.image-container {
+              display: flex;
+              align-items: center;
+            }
+        
+            .image-container img {
+              max-width: 50%;
+              height: auto;
+              margin-right: 20px; /* Добавяне на разстояние между снимката и текста */
+            }
+        
+            .text-next-to-image {
+              font-size: 24px;
+              font-weight: bold;
+            }
+    </style>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="3.jpg">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#contact">Отностно</a></li>
+            <li><a href="http://127.0.0.1:5500/About.html">За Нас</a></li>
+        </ul>
+
+       <h1 class="Balaknche">Balkanche</h1>
+        <section id="buttoni">
+        <ul class="menu">
+            <li><a href="#istoriq">История</a></li>
+            <li><a href="#balkancheto">Народния Мотор</a></li>
+        </section>
+        
+    </div>
+    <h2>Добре дошли в сайта "Balkanche.com", тук ще намерите иформация отнсонно историята на моторите, разбира се най-популярните марки
+            тогава, че дори и сега, техническа информация относно моторите.</h2>
+
+            <h2>
+                За тези от вас които ги интересува от къде започва създаването на мотори, и искат просот да научат нещо ново, нека да разгледат графата "История", където 
+                написаното е изпозван изкуствен интелект(AI), но ако искате може да кликмете върху <a href="https://bg.wikipedia.org/wiki/Мотоциклет#История" target="_blank">този линк</a> той ще ви препрати в страницата на wikipedia.
+            </h2>
+
+
+
+
+
+
+
+
+
+
+
+            <section id="istoriq">
+                <h1>
+                    История
+                </h1>
+                <h3>
+                    
+                    <div class="image-container">
+                        <img src="home1.0.jpg" width="600 px" height="800px" alt="Вашата снимка">
+                        <div class="text-next-to-image">Моторите или мотоцикелтите са превозни средства на две или 3 колела с двигател и максимално тегло до 400кг (За триколесните),
+                            с обем на двигателя надвишаващ 50cc(кубика), като новите мотори дори достигат и до 2000сс. През средата на 19 век, генералният двигател на Стивънсън се превръща в основа за първите мотоциклети. През 1885 г., Готлиб Даймлер създава първият мотоциклет, използвайки вътрешнокомбустионен двигател. В началото на 20 век, компании като Harley-Davidson и Indian Motorcycle започват масово производство, утвърждавайки мотоциклета като популярно средство за превоз.
+                            През 1920-те и 1930-те години, мотоциклетите стават символ на свободата и приключението, а байкърската култура създава емблематични модели, като "чопърите". В 1950-те и 1960-те, мотоциклетът става поп-икона, допълнително засилвайки влиянието на байкърската общност. През 1980-те, технологичните иновации включват въвеждането на антиблокиращи системи за спиране (ABS) и електронни системи за управление на двигателя.
+                             В същото време, състезанията в мотокрос и шосе развиват високопроизводителни модели.
+                            През последните десетилетия преди 1990 г., мотоциклетите стават по-разнообразни, обхващайки суперспортни, крузъри, туръри и офроуд мотоциклети, отразявайки разнообразието на нуждите и предпочитанията на мотоциклистите по света. Тези иновации и разнообразие 
+                            формират богатата история на мотоциклетите преди 1990 г.
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                      </div>
+              </div>
+
+
+
+
+
+                </h3>
+            </section>
+                <h3>
+                    Нашето балканече е един от най разпространените БЪЛГАРСКИ мотори.
+                </h3>
+            <section id="balkancheto">
+
+            </section>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 3){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
